@@ -19,12 +19,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  greenyellow;
+    background-color:  orange;
 }
 
 #menu{
     list-style: none;
     display: flex;
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18.5167px;
+    line-height: 22px;
+    align-items: center;
 }
 
 
@@ -35,6 +42,7 @@
 #menu .item a {
     color:#626A67;
     text-decoration: none;
+    color: rgba(0, 0, 0, 0.625);
 }
 
 .action{
@@ -49,7 +57,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-color:  greenyellow;
+    background-color:  orange;
 }
 
 #btn-cart{
@@ -57,7 +65,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-color:  greenyellow;
+    background-color:  orange;
 }
 
 .logo{
@@ -67,16 +75,100 @@
 .banner{
     background-image: url('/hinh/banner\ 1.png');
     width: 100%;
-    height: 900px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: 100% 600px;
 }
 
 #menu .item a:hover{
-    color: orange;
+    color: white;
 }
 
 #header img{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+#review{
+    width: 50%;
+    text-align: left;
+    margin-left: 250px;
+    padding-top: 130px;
+    color: orange;
+}
+
+#review h3{
+    font-size: 40px;
+}
+#review h2{
+    font-size: 55px;
+    line-height: 30px;
+}
+
+#review h1{
+    font-size: 100px;
+    line-height: 120px;
+    margin-left: -5px ;
+}
+
+#review button {
+    width: 191px;
+    height: 40px;
+    margin-top:41px;
+    background:orange;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+    margin-left: 10px;
+}
+
+#features{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#features img{
+    width: 60px;
+    height: 60px;
+}
+
+#topList{
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    padding-top: 70px;
+    background-color: #D9D9D9;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#topList h1{
+    color: orange;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin-top: 50px;
+    color: black;
+}
+.grid-item {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.grid-item img{
+    width: 300px;
+    height: 300px;
 }
