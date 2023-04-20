@@ -19,13 +19,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  orange;
+    background-color:  #fec229;
 }
 
 #menu{
     list-style: none;
     display: flex;
-
     font-family: 'Inter';
     font-style: italic;
     font-weight: 800;
@@ -40,16 +39,24 @@
 }
 
 #menu .item a {
-    color:#626A67;
     text-decoration: none;
+    color:#626A67;
     color: rgba(0, 0, 0, 0.625);
+    
 }
 
 .action{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 33,333%;
+    height: 30px;
+    width: 15%;
+}
+
+
+.action i{
+    color:#626A67;
+    color: rgba(0, 0, 0, 0.625);  
 }
 
 #btn-user{
@@ -57,7 +64,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-color:  orange;
+    background-color: #FEC329;
 }
 
 #btn-cart{
@@ -65,7 +72,7 @@
     width: 30px;
     height: 30px;
     background-color: #fff;
-    background-color:  orange;
+    background-color:  #FEC329;
 }
 
 .logo{
@@ -73,7 +80,7 @@
 }
 
 .banner{
-    background-image: url('/hinh/banner\ 1.png');
+    background-image: url('../hinh/banner\ 1.png');
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
@@ -94,7 +101,7 @@
     text-align: left;
     margin-left: 250px;
     padding-top: 130px;
-    color: orange;
+    color: #FEC329;
 }
 
 #review h3{
@@ -111,11 +118,13 @@
     margin-left: -5px ;
 }
 
-#review button {
+#review input {
     width: 191px;
+    font-size: 20px;
+    padding-top: 5px;
     height: 40px;
     margin-top:41px;
-    background:orange;
+    background:#FEC329;
     border:none;
     outline:none;
     color:#fff;
@@ -152,7 +161,7 @@
 }
 
 #topList h1{
-    color: orange;
+    color: #FEC329;
 }
 
 .grid-container {
@@ -171,4 +180,320 @@
 .grid-item img{
     width: 300px;
     height: 300px;
+}
+
+#banner-2{
+    width: 100%;
+    height: 900px;
+    background-image: url("../hinh/vegetarian-pizza.jpg");
+    
+    color: whitesmoke;
+    padding-top: 300px;
+    padding-left: 50px;
+}
+
+
+#DatNgay{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FEC329;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+
+
+.contact{
+    height: 450px;
+    width: 100%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.contact h2{
+    color: #FEC329;
+    text-align: center;
+}
+
+#lienHe{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+#openHour{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+#map{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+
+}
+
+ul.sub-menu{
+    position: absolute;
+    padding: 50px 0px;
+    list-style: none;
+    background-color: #FEC329;
+    align-items: center;
+    width: 150px;
+    height: 230px;
+    margin-left: -20px;
+    padding-left: 20px;
+    display: none;
+}
+
+ul.sub-menu li{
+    padding-top: 30px;
+}
+
+#menu{
+    position: relative;
+}
+
+.modal-content {
+    width: 80%;
+    max-width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.item:hover .sub-menu {
+    display: block;
+}
+
+#btn-search input{
+    font-size: 15px;
+    border: solid .25em #fff;
+    width: 120px;
+    border-radius: 5px;
+    background-image: url('../hinh/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+}
+
+
+.action div{
+    display: flex;
+    align-items: center;
+}
+
+.banner-danhmuc{
+    height: 250px;
+    width: 100%;
+    background-image: url('../hinh/banner-danhmuc.png');
+    background-size: cover;
+    background-position-y: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18.5167px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    color:#626A67;
+    color: rgba(0, 0, 0, 0.625);
+}
+
+
+.danhMuc{
+    background-color: rgb(71,71,71);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.danhMuc input[type="button"]{
+    color: white;
+    background-color: rgb(71,71,71);
+    border: none;
+    width: 33.333333%;
+    height: 50px;
+}
+
+
+.SanPham-burger{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    line-height: 30px;
+    height: 1000px;
+}
+
+.sp-item img{
+    width: 100%;
+}
+
+.col-3{
+    margin-top: 120px;
+    height: 300px;
+}
+
+.sp-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.sp-item input{
+    background-color: #FEC329;
+    border: none;
+    width: 150px;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+    display: none;
+}
+
+.sp-item:hover>input{
+    display: block;
+}
+
+.sp-item:hover{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.127);
+}
+
+
+.banner-gt{
+    height: 560px;
+    width: 100%;
+    background-image: url('../hinh/gioi-thieu.jpg');
+    background-size: cover;
+    color: whitesmoke;
+    padding-top: 355px;
+    padding-left: 50px;
+}
+
+.banner-gt h1{
+    font-size: 60px;
+}
+
+.noiDung{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.noiDung h3{
+    font-size: 50px;
+    color: #fec229;
+    margin-bottom: 30px;
+}
+
+
+.Doan{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    column-gap: 20px;
+}
+
+.gt3{
+    height: 600px;
+    width: 100%;
+    background-image: url('../hinh/gt3.webp');
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 23px;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.gt3 input{
+    background-color: #fec229;
+    color: whitesmoke;
+    border-radius: 20px;
+    width: 260px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.input-e{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-e input[type="email"]{
+    width:  600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+}
+
+.input-e input{
+    height: 50px;
+}
+
+.input-e input[type="button"]{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    width: 60px;
+    background-color: #fec229;
+    color: whitesmoke
+}
+
+.nhapEmail label{
+    padding-left: 410px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.form-contact{
+    width: 80%;
+    margin-left: 10%;
+    height: 1000px;
+}
+
+.form-contact{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left input{
+    height: 40px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.left textarea{
+    width: 500px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.left input[type="submit"]{
+    width: 200px;
+    background-color: #fec229;
+    border: #fec229;
+    border-radius: 20px;
+    margin-top: 20px;
 }
