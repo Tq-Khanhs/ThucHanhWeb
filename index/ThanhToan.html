@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Pattern.js"></script>
+    <link rel="stylesheet" href="../css/formDangNhap.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="../index/TrangChu.html" class="logo">
+                <img src="../hinh/logo.png" alt="" height="90px">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="../index/TrangChu.html">TRANG CHỦ</a>
+                </div>
+                <div class="item">
+                    <a href="../index/ThucDon.html">THỰC ĐƠN</a>
+                    <ul class="sub-menu">
+                        <li><a href="ThucDon.html">Burger</a></li>
+                        <li><a href="Pizza.html">Pizza</a></li>
+                        <li><a href="NuocUong.html">Nước uống</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <a href="../index/GioiThieu.html">GIỚI THIỆU </a>
+                </div>
+                <div class="item">
+                    <a href="../index/LienHe.html">LIÊN HỆ</a>
+                </div>
+            </div>
+            <div class="action">
+                    <div id="btn-search"> 
+                        <input type="text" placeholder="  ">
+                    </div>
+                    <div id="btn-user" data-toggle="modal" data-target="#myModal">
+
+                        <i class="fa-solid fa-user fa-xl"></i>
+                    </div>
+                    <div id="btn-cart">
+                        <a href="../index/ThanhToan.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                        
+                    </div>
+            </div>
+        </div>
+        <div class="banner-danhmuc">
+            <div><h1>Thanh toán</h1></div>
+        </div>
+        <div class="thanhToan">
+            <div class="thanhToanLeft">
+                <div style="font-weight: bold;">Thông tin tài khoản</div>
+                <div class="row">
+                    <div class="col-6"><label for="HoVaTenLot"><span>*</span>Họ và tên lót</label></div>
+                    <div class="col-6"><input type="text" name="HoVaTenLot" id="HoVaTenLot"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="Ten"><span>*</span>Tên</label></div>
+                    <div class="col-6"><input type="text" name="Ten" id="Ten"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="E-mail"><span>*</span>E-mail</label></div>
+                    <div class="col-6"><input type="email" name="E-mail" id="E-mail"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="DT"><span>*</span>Điện thoại</label></div>
+                    <div class="col-6"><input type="text" id="DT" name="DT"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="DiaChi"><span>*</span>Địa chỉ</label></div>
+                    <div class="col-6"><input type="text" id="DiaChi" name="DiaChi"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="QuanHuyen"><span>*</span>Quận/Huyện</label></div>
+                    <div class="col-6"><input type="text" name="QuanHuyen" id="QuanHuyen"></div>
+                </div>
+                <div class="row">
+                    <div class="col-6"><label for="TinhThanhPho"><span>*</span>Tỉnh/Thành phố</label></div>
+                    <div class="col-6"><input type="text" name="QuanHuyen" id="QuanHuyen"></div>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 90%;"><input type="checkbox" id="thanhToan">Địa chỉ nhận hàng và địa chỉ thanh toán giống nhau</div>
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 40%;"><input type="checkbox" name="DaDoc" id="DaDoc"><Span>*</Span>Tôi đã đọc & đồng ý</div>
+            </div>
+            <div class="thanhToanRight">
+                <div class="phuongThuc">
+                    <div class="phuongThucVC">
+                        <h5 style="text-align: center;">Phương thức vận chuyển</h5>
+                        <label for="free">Miễn phí vận chuyển</label>
+                        <div><input type="radio" name="VC" id="free"> Miễn phí vận chuyển 0 VNĐ</div>
+                        <label for="phi">Phí cố định</label>
+                        <div><input type="radio" name="VC" id="phi"> Phí vận chuyển cố định 30,000 VNĐ</div>
+                    </div>
+                    <div class="phuongThucTT">
+                        <h5 style="text-align: center;">Phương thức thanh toán</h5>
+                        <div><input type="radio" name="TT"> Thu tiền khi giao hàng</div>
+                        <div><input type="radio" name="TT"> Chuyển khoản ngân hàng</div>
+
+                    </div>
+                </div>
+                <div>
+                    <div class="table">
+                        <div style="background-color:#626A67 ; z-index: 5; width: 100%; height: 70px; margin-top: -16px;"></div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Hình ảnh</td>
+                                    <td>Số lượng</td>
+                                    <td>Đơn giá</td>
+                                    <td>Tổng cộng</td>
+                                    <td>Tên sản phẩm</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td><img src="../hinh/Pizza-HS.png" alt=""></td>
+                                    <td>Pizza Hải sản</td>
+                                    <td><input type="button" value="-"><input type="text" value="1"><input type="button" name="" id="" value="+"></td>
+                                    <td>149,000 VNĐ</td>
+                                    <td>149,000 VNĐ</td>
+                                </tr>
+                              </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-6">Sử dụng mã giảm giá</div>
+                            <div class="col-6" id="giamGia"><input type="text" placeholder="Mã giảm giá"><input type="button" value="&#x2713;"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Thành tiền</div>
+                            <div class="col-6">149,000 VNĐ</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Miễn phí vận chuyển</div>
+                            <div class="col-6">0 VNĐ</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Tổng cộng</div>
+                            <div class="col-6">149,000 VNĐ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 50px; border: 2px solid black; margin-bottom: 20px;"></div>
+
+
+                <div class="ghiChu">
+                    <div>Thêm ghi chú cho đơn hàng</div>
+                    <div><input type="text" name="" id=""></div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 30%;"><input type="checkbox" name="DaDoc" id="DaDoc"><Span style="color: red;">*</Span>Tôi đã đọc & đồng ý</div>
+                    <div><input type="button" value="Xác nhận đơn hàng"></div>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+        
+        <div class="contact">
+            <div id="lienHe">
+                <div><h2>Liên Hệ</h2></div>
+                <div><i class="fa-solid fa-location-dot"></i> Địa chỉ: 161/37/10 Tân Hưng Thuận, Quận 12, TP. Hồ Chí Minh</div>
+                <div><i class="fa-solid fa-phone"></i> Hotline: 0565970622</div>
+                <div><i class="fa-solid fa-envelope"></i> Email: tqkhanhsn@gmail.com</div>
+                <div><a href="https://www.facebook.com/tqkhanhsn"><i class="fa-brands fa-facebook fa-2xl" style="color: black;"></i></a> <a href="https://www.instagram.com/tqkhanhsn/"><i class="fa-brands fa-square-instagram fa-2xl" style="color: black;"></i></a></div>
+            </div>
+            <div id="openHour">
+                <div><h2>Thời gian mở cửa</h2></div>
+                <div>Thứ 2 - Thứ 6: 08:00 - 16:00</div>
+                <div>Thứ 7: 09:00 - 16:00 </div>
+            </div>
+            <div id="map">
+                <div><h2>Bản đồ</h2></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6620347925473!2d106.62342721073595!3d10.837154789270794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bebbad9b7d7%3A0x898342f35e2f23d3!2zMTYxLzM3LzEwIMSQw7RuZyBIxrBuZyBUaHXhuq1uIDIsIFTDom4gSMawbmcgVGh14bqtbiwgUXXhuq1uIDEyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1681534402405!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- The Modal -->
+            <div class="modal" id="myModal"> 
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="container" id="container">
+                        <div class="form-container register-container">
+                            <form action="#">
+                                <h1>Đăng ký</h1>
+                                <input type="text"  id="txtHoTen" placeholder="Họ tên" onblur="ktraTen();">
+                                <span id="rqsName"></span>
+                                <input type="email" id="txtEmail" placeholder="Email" onblur="ktraEmail();">  
+                                <span id="rqsEmail"></span>
+                                <input type="password" id="psw" placeholder="Mật khẩu" onblur="ktraMK();">  
+                                <span id="rqsMK"></span>
+                                <button onclick="ketQua();">Đăng ký</button>
+                                <span>Sử dụng tài khoản khác</span>
+                                <div class="social-container"> 
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                            </form>
+                        </div>
+                
+                        <div class="form-container login-container">
+                            <form action="#">
+                                <h1>Đăng nhập</h1>
+                                <input type="text" placeholder="Email">
+                                <input type="password" placeholder="Mật khẩu">
+                                <div class="content">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                        <div>Nhớ mật khẩu</div>
+                                    </div>
+                                    <div class="pass-link">
+                                        <a href="#">Quên mật khẩu?</a>
+                                    </div>
+                                </div>
+                                <button>Đăng nhập</button>
+                                <span>Sử dụng tài khoản khác</span>
+                                <div class="social-container">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-google"></i>
+                
+                                </div>
+                            </form>
+                        </div>
+                
+                        <div class="overlay-container">
+                               
+                            <div class="overlay">
+                                <div class="overlay-panel overlay-left">
+                                    <h1 class="title">Xin chào <br>các bạn</h1>
+                                    <p>Nếu bạn đã có tài khoản, đăng nhập tại đây và mua hàng tại trang web của chúng tôi</p>
+                                    <button class="ghost" id="login">Đăng nhập tại đây</button>
+                                    <button type="button" class="close" data-dismiss="modal">Đóng</button>
+                                </div>
+                                <div class="overlay-panel overlay-right">
+                                    <h1 class="title">Bắt đầu trải nghiệm<br>của bạn ngay bây giờ</h1>
+                                    <p>Nếu bạn chưa có tài khoản, hãy đăng ký tại đây và bắt đầu trải nghiệm của bạn</p>
+                                    <button class="ghost" id="register">Đăng ký tại đây</button>
+                                    <button type="button" class="close" data-dismiss="modal">Đóng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Thông báo đăng ký thành công -->
+            <div id="register-modal" class="modal">
+                <div class="modal-content">
+                  <p>Bạn đã đăng ký thành công</p>
+                  <button onclick="dongModal();">Đóng</button>
+                </div>
+            </div>
+            <script src="../js/formDangKy.js"></script>
+        </div>    
+</body>
+</html>

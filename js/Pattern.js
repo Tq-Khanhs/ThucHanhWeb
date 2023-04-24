@@ -60,13 +60,19 @@ function ktraTen() {
   function ketQua() {
     if(ktraTen()&&ktraMK()&&ktraEmail()){
       $('#myModal').modal('hide');
-      let modal = document.getElementById('register-modal');
-      modal.style.display = 'flex';
-      modal.style.justifyContent = 'center';
-      modal.style.alignItems = 'center';
+      moModal();
     }
+  }
+  
+  function moModal(){
+    let modal = document.getElementById('register-modal');
+    modal.style.display = 'flex';
+    modal.style.justifyContent = 'center';
+    modal.style.alignItems = 'center';
+    
   }
 
   function dongModal(){
-    $("#register-modal").remove();
+    let modal = document.getElementById('register-modal');
+    modal.style.display = "none";
   }
