@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh Toan</title>
+    <title>Thanh toán</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -37,6 +37,9 @@
                 <div class="item">
                     <a href="../index/LienHe.html">LIÊN HỆ</a>
                 </div>
+                <div class="item">
+                    <a href="../index/ThanhToan.html">THANH TOÁN</a>
+                </div>
             </div>
             <div class="action">
                     <div id="btn-search"> 
@@ -47,8 +50,7 @@
                         <i class="fa-solid fa-user fa-xl"></i>
                     </div>
                     <div id="btn-cart">
-                        <a href="../index/ThanhToan.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                        
+                        <a href="../index/GioHang.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a> 
                     </div>
             </div>
         </div>
@@ -108,24 +110,32 @@
                 <div>
                     <div class="table">
                         <div style="background-color:#626A67 ; z-index: 5; width: 100%; height: 70px; margin-top: -16px;"></div>
-                        <table>
+                        <table id="cartTable">
                             <thead>
                                 <tr>
                                     <td>Hình ảnh</td>
-                                    <td>Số lượng</td>
-                                    <td>Đơn giá</td>
-                                    <td>Tổng cộng</td>
                                     <td>Tên sản phẩm</td>
+                                    <td>Số lượng</td>
+                                    <td>Giá</td>
+                                    <td>Tổng cộng</td>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
                                     <td><img src="../hinh/Pizza-HS.png" alt=""></td>
                                     <td>Pizza Hải sản</td>
-                                    <td><input type="button" value="-"><input type="text" value="1"><input type="button" name="" id="" value="+"></td>
+                                    <td><input type="button" value="-" onclick="decreaseValue(this)"><input type="text" value="1" class="quantityInput"><input type="button" name="" id="" value="+" onclick="increaseValue(this)"></td>
                                     <td>149,000 VNĐ</td>
                                     <td>149,000 VNĐ</td>
                                 </tr>
+                                <tr>
+                                    <td><img src="../hinh/pizza-tom.png" alt=""></td>
+                                    <td>Pizza Tôm Cocktail</td>
+                                    <td><input type="button" value="-" onclick="decreaseValue(this)"><input type="text" value="1" class="quantityInput"><input type="button" name="" id="" value="+" onclick="increaseValue(this)"></td>
+                                    <td>149,000 VNĐ</td>
+                                    <td>149,000 VNĐ</td>
+                                </tr>
+                                
                               </tbody>
                         </table>
                         <div class="row">
@@ -134,7 +144,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Thành tiền</div>
-                            <div class="col-6">149,000 VNĐ</div>
+                            <div class="col-6" id="ThanhTien">298,000 VNĐ</div>
                         </div>
                         <div class="row">
                             <div class="col-6">Miễn phí vận chuyển</div>
@@ -142,7 +152,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">Tổng cộng</div>
-                            <div class="col-6">149,000 VNĐ</div>
+                            <div class="col-6" id="TongCong">298,000 VNĐ</div>
                         </div>
                     </div>
                 </div>
@@ -256,6 +266,7 @@
                 </div>
             </div>
             <script src="../js/formDangKy.js"></script>
-        </div>    
+        </div>  
+        <script src="../js/DatMua.js"></script>  
 </body>
 </html>

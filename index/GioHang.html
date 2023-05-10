@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>Thanh toán</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -55,88 +55,45 @@
             </div>
         </div>
         <div class="banner-danhmuc">
-            <div><h1>Pizza</h1></div>
+            <div><h1>Giỏ hàng</h1></div>
         </div>
-        <div class="danhMuc">
-            <input type="button" value="Burger" onclick="window.location.href='../index/ThucDon.html';" >
-            <input type="button" value="Pizza" onclick="window.location.href='../index/Pizza.html';" style="background-color: #fec229;  color:#626A67;color: rgba(0, 0, 0, 0.625);">
-            <input type="button" value="Nước Uống" onclick="window.location.href='../index/NuocUong.html';">
-        </div>
-        <div class="SanPham-burger">
-            <div class="row">
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza1.html"><img src="../hinh/Pizza-HS.png" alt=""></a>
-                        <span>Pizza hải sản Cocktail</span>
-                        <span><h4>149,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza1.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza2.html"><img src="../hinh/pizzaHaiSan.png"></a>
-                        <span>Pizza Hải Sản</span>
-                        <span><h4>149,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza2.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza3.html"><img src="../hinh/pizza-HS-ND.png" alt=""></a>
-                        <span>Pizza Hải Sản Nhiệt đới</span>
-                        <span><h4>149,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza3.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza4.html"><img src="../hinh/pizza-tom.png" alt=""></a>
-                        <span>Pizza Tôm Cocktail</span>
-                        <span><h4>149,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza4.html';">
+                <div>
+                    <input type="button" value="Thanh Toán" style="margin-left: 90%; margin-top: 30px; height: 40px; background-color: #fec229; " onclick="window.location.href='../index/ThanhToan.html';">
+                    <div class="table" style="margin-bottom: 100px;">
+                        <table id="GioHangTable">
+                            <thead>
+                                <tr>
+                                    <td>Hình ảnh</td>
+                                    <td>Tên sản phẩm</td>
+                                    <td>Số lượng</td>
+                                    <td>Giá</td>
+                                    <td>Tổng cộng</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td><img src="../hinh/Pizza-HS.png" alt=""></td>
+                                    <td>Pizza Hải sản</td>
+                                    <td><input type="button" value="-" onclick="decreaseValue(this)"><input type="text" value="1" class="quantityInput"><input type="button" name="" id="" value="+" onclick="increaseValue(this)"></td>
+                                    <td>149,000 VNĐ</td>
+                                    <td>149,000 VNĐ</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="../hinh/pizza-tom.png" alt=""></td>
+                                    <td>Pizza Tôm Cocktail</td>
+                                    <td><input type="button" value="-" onclick="decreaseValue(this)"><input type="text" value="1" class="quantityInput"><input type="button" name="" id="" value="+" onclick="increaseValue(this)"></td>
+                                    <td>149,000 VNĐ</td>
+                                    <td>149,000 VNĐ</td>
+                                </tr>
+                              </tbody>
+                        </table>
                     </div>
                     
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="sp-item">
-                       <a href="../index/Pizza5.html"><img src="../hinh/pizza-ThitXK.png" alt=""></a> 
-                        <span>Pizza Thịt Xông Khói</span>
-                        <span><h4>139,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza5.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza6.html"><img src="../hinh/PizzaThitCanada.png" alt=""></a>
-                        <span>Pizza Thịt Nguội Kiểu Canada</span>
-                        <span><h4>139,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza6.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza7.html"><img src="../hinh/Pizzaga.png" alt=""></a>
-                        <span>Pizza Gà Nướng 3 Vị</span>
-                        <span><h4>139,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza7.html';">
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="sp-item">
-                        <a href="../index/Pizza8.html"><img src="../hinh/pizza5LoaiThit.png" alt=""></a>
-                        <span>Pizza 5 Loại Thịt Đặc biệt</span>
-                        <span><h4>139,000 VNĐ</h4></span>
-                        <input type="button" value="Xem chi tiết" onclick="window.location.href='../index/Pizza8.html';">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
 
+        </div>
         
-        <div class="contact">
+        <div class="contact" style="margin-top: 50px;">
             <div id="lienHe">
                 <div><h2>Liên Hệ</h2></div>
                 <div><i class="fa-solid fa-location-dot"></i> Địa chỉ: 161/37/10 Tân Hưng Thuận, Quận 12, TP. Hồ Chí Minh</div>
@@ -202,6 +159,7 @@
                         </div>
                 
                         <div class="overlay-container">
+                               
                             <div class="overlay">
                                 <div class="overlay-panel overlay-left">
                                     <h1 class="title">Xin chào <br>các bạn</h1>
@@ -218,6 +176,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
             <!-- Thông báo đăng ký thành công -->
@@ -228,6 +187,7 @@
                 </div>
             </div>
             <script src="../js/formDangKy.js"></script>
-        </div>
+        </div>  
+        <script src="../js/DatMua.js"></script>  
 </body>
 </html>
